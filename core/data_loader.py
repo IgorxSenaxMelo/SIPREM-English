@@ -24,15 +24,17 @@ SCALE_MIN = np.array([1, 1, 1, 1, 1], dtype=int)
 
 
 
-TFN_eval_7 = [
-     0   0   1   2
-     1   2   2   3
-     2   3   4   5
-     4   5   5   6
-     5   6   7   8
-     7   8   8   9
-     8   9  10  10
-];
+# Ghorabaee et al. seven-level trapezoidal fuzzy evaluation scale.
+# Each row is [a, b, c, d] for one linguistic evaluation level.
+TFN_EVAL_7 = np.array([
+    [0, 0, 1, 2],
+    [1, 2, 2, 3],
+    [2, 3, 4, 5],
+    [4, 5, 5, 6],
+    [5, 6, 7, 8],
+    [7, 8, 8, 9],
+    [8, 9, 10, 10],
+], dtype=float)
 
 
 

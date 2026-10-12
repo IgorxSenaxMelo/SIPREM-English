@@ -32,9 +32,9 @@ def aggregate_fuzzy_flows(phi_plus_fuzzy_exp, phi_minus_fuzzy_exp, phi_net_fuzzy
 
 
 def _thresholds():
-   
-q_vals = [0, 0.6, 0.6, 0.6, 0.6]
-p_vals = [0, 1.9, 1.9, 1.9, 1.9]
+    # Thresholds scaled to the 0-10 range of the trapezoidal evaluation scale.
+    q_vals = [0, 0.06 * 10, 0.06 * 10, 0.06 * 10, 0.06 * 10]
+    p_vals = [0, 0.19 * 10, 0.19 * 10, 0.19 * 10, 0.19 * 10]
     return q_vals, p_vals
 
 
